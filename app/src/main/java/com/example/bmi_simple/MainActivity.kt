@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View) {
         when (view?.id) {
             R.id.btn_calculate -> {
-                if (binding.height.text.isEmpty() && binding.weight.text.isEmpty()) {
+                if (binding.height.text!!.isEmpty() && binding.weight.text!!.isEmpty()) {
                     Toast.makeText(this, "Enter the height & Weight", Toast.LENGTH_SHORT).show()
-                } else if (binding.weight.text.isEmpty()) {
+                } else if (binding.weight.text!!.isEmpty()) {
                     Toast.makeText(this, "Enter the weight", Toast.LENGTH_SHORT).show()
-                } else if (binding.height.text.isEmpty()) {
+                } else if (binding.height.text!!.isEmpty()) {
                     Toast.makeText(
                         this@MainActivity,
                         "please enter height  ",
@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     binding.btnCalculate.text = "Calculate"
                     //binding.BMI.setText("")
                     binding.BMI.setText("")
-                    binding.weight.text.clear()
-                    binding.height.text.clear()
+                    binding.weight.text?.clear()
+                    binding.height.text?.clear()
                     Toast.makeText(this, "Clear karo", Toast.LENGTH_SHORT).show()
                 } else {
 
