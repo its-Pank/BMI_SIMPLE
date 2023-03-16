@@ -22,9 +22,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:hint="hight in cm"
+            android:hint="@string/hight_in_cm"
             android:inputType="numberDecimal"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColorHint="#757575"
+            tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -35,16 +37,18 @@
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/height_layout"
         android:gravity="center"
-        >
+        tools:ignore="RtlHardcoded">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:hint="weight in kg's"
+            android:hint="@string/weight_in_kg_s"
             android:inputType="numberDecimal"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColorHint="#757575"
+            tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -78,8 +82,9 @@
             android:layout_width="match_parent"
             android:id="@+id/btn_calculate"
             android:layout_height="60dp"
-            android:text="CALCULATE"
-            app:cornerRadius="100dp">
+            android:text="@string/calculate"
+            app:cornerRadius="100dp"
+            tools:ignore="VisualLintButtonSize">
 
 
         </com.google.android.material.button.MaterialButton>

@@ -1,8 +1,16 @@
 <resources>
-    <string name="app_name">MUI_BMI</string>
+    <string name="app_name">BMI_Calculate</string>
     <string name="over_weight">Health Status:-Your are Over Weight</string>
     <string name="under_weight">Health Status:- You are Under Weight</string>
     <string name="Healthy">Health Status :- You are Healthy</string>
     <string name="Suffering_from_Obesity">Health Status :- Suffering from Obesity</string>
+    <string name="swati">swati</string>
+    <string name="name_swati_maurya">Name: Swati Maurya</string>
+    <string name="phoneno_919639607848">PhoneNo:+919639607848</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="hight_in_cm">hight in cm</string>
+    <string name="weight_in_kg_s">weight in kg\'s</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="email_mauryaswati729_gmail_com">Email:mauryaswati729@gmail.com</string>
     />
 </resources>
